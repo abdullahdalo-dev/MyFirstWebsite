@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+body {
+  border: 12px solid #37373850;
+  padding: 20px;
+  background: #bdc7c6;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* ===== الحاوية ===== */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #d7d3e7;
+  padding: 30px;
+}
+
+/* ===== العناوين ===== */
+h1 {
+  text-align: center;
+  color: #0e52f3;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #a1da93;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #0e2ee2;
+  border-bottom: 2px solid #e6305e;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* ===== الأقسام ===== */
+.section {
+  margin-bottom: 20px;
+}
+
+/* ===== المعلومات الشخصية ===== */
+.info {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 5px;
+}
+
+/* ===== الخبرات والتعليم ===== */
+.job, .edu { 
+  background: #c7b7c1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border:  2px solid #b4d0ff;
+}
+
+.job h3, .edu h3 {
+  margin-bottom: 5px;
+  color: #1e3a8a;
+}
+
+/* ===== المهارات ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #dbeafe;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #1e3a8a;
+  font-size: 14px;
+}
+
+/* ==== اللغات ==== */
+.languaes{
+  display: flex;
+  gap: 8px;
+}
+.languae-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  margin: 5px;
+}
+
+/* ==== العربية ==== */
+.lang-ar {
+  background:  #d4be65;
+  color: #000000;
+  border:  2px solid #6e98e0;
+}
+
+/* ==== الانجليزية ==== */
+.lang-en {
+  background:  #77a6d8;
+  color: #000000;
+  border:  2px solid #ecea4c;
+  
+}
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  color: #ff0000;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+  .info {
+    grid-template-columns: 1pt;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding:  15px;
+  }
+}
