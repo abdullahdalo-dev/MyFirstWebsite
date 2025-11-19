@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    تدرج لوني  / Gradient Example  </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        /*1     خلفية موقع  */
+        .bg-section {
+            background: linear-gradient(135deg, #6a11cd, #2575fc);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        /*  2   زر متدرج */
+        .btn {
+            padding: 12px 22px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        /*    3 كارت متدرج    */
+        .card {
+            width: 220px;
+            padding: 20px;
+            color: white;
+            background: radial-gradient(circle, #43cea2, #185a9d);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        /*   4 حدود متدرجة   */
+        .border-grad{
+            width: 220px;
+            padding: 15px;
+            border: 6px solid;
+            border-image: linear-gradient(45deg, #fbc2eb, #a6c1ee) 1;
+            border-radius: 12px;
+            margin-bottom: 30px;
+
+        }
+
+        /*   5 نص متدرج    */
+        .text-grad {
+            font-size: 35px;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff4b1f, #1fddff);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 30px;
+        }
+
+        /*   دائرة تدرج مخروطي    */
+        .circle {
+            width: 150px;
+            height: 150px;
+            background: conic-gradient(red, yellow, green, blue, red);
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>1 خلفية موقع</h2>
+    <div class="bg-section">
+        هذا مثال على خلفية متدرجة.
+    </div>
+
+    <h2>2  زر متدرج</h2>
+    <button class="btn">Gradient Button</button>
+
+    <h2>3  كارت متدرج</h2>
+    <div class="card">
+        كارت بخلفية Radial Gradient
+    </div>
+
+    <h2>4  حدود متدرج</h2>
+    <div class="border-grad">
+        عنصر ب حدود متدرجة (border gradient)
+    </div>
+
+    <h2>5  نص متدرج</h2>
+    <div class="text-grad">
+        Gradient text
+    </div>
+
+    <h2>6  تدرج Conic</h2>
+    <div class="circle"></div>
+</body>
+</html>
