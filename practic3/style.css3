@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+/*    الحاويه العامة     */  
+.tip {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+}
+
+/*    البالون     */ 
+.tip .msg {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+    font-size: 0.85rem;
+}
+
+.tip:hover .msg {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*     السهم  */
+.msg::after {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+}
+
+/*     اعلى  */
+.tip.top .msg {
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tip.top .msg::after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: rgb(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+/*   اسفل   */
+.tip.bottom .msg {
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tip.bottom .msg::after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+}
+
+/*     يمين  */
+.tip.right .msg {
+    left: 130%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tip.right .msg::after {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+}
+
+/*     يسار  */
+.tip.left .msg {
+    right: 130%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tip.left .msg::after {
+    top: 50%;
+    left: 100%;
+    transform: translateX(-50%);
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+}
