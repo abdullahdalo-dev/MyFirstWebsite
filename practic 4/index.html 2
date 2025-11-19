@@ -1,43 +1,36 @@
-body {
-    font-family: sans-serif;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.box {
-    margin-bottom: 40px;
-}
+    <div class="box">
+        <h3>Linear Gradient</h3>
+        <div class="demo linear"></div>
+        <p> تدرج خطي من الازرق الى البنفسجي</p>
+    </div>
+    
+    <div class="box">
+        <h3>Radial Gradient</h3>
+        <div class="demo radial"></div>
+        <p> تدرج دائري يبدأ من المركز</p>
+    </div>
 
-h3 {
-    margin-bottom: 10px;
-}
+    <div class="box">
+        <h3>conic Gradient</h3>
+        <div class="demo conic"></div>
+        <p> تدرج مخروطي يدور حول المركز </p>
+    </div>
 
-.demo {
-    width: 200px;
-    height: 120px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    border: 2px solid #ccc;
-}
-
-/*  1 Linear Gradient   */
-.demo.linear {
-    background: linear-gradient(to right, #fceabb, #9d50bb);
-}
-
-
-/*   2 Radial Gradient  */
-.demo.radial {
-    background: radial-gradient(circle, #fceabb, #f8b500);
-}
-
-
-/*  3 conic Gradient */      
-.demo.conic {
-    background: conic-gradient(red, yellow, green, blue, red);
-}
-
-/*  Repeating Gradient */
-.demo.repeating {
-    background: repeating-linear-gradient(
-        45deg, #000 0px,  #000 10px,  #fff  10px,  #fff  20px);
-}
+    <div class="box">
+        <h3>Repeating Gradient</h3>
+        <div class="demo repeating"></div>
+        <p> تدرج متكرر على شكل خطوط</p>
+    </div>
+    
+</body>
+</html>
