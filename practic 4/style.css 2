@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.box {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.demo {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 2px solid #ccc;
+}
+
+/*  1 Linear Gradient   */
+.demo.linear {
+    background: linear-gradient(to right, #fceabb, #9d50bb);
+}
+
+
+/*   2 Radial Gradient  */
+.demo.radial {
+    background: radial-gradient(circle, #fceabb, #f8b500);
+}
+
+
+/*  3 conic Gradient */      
+.demo.conic {
+    background: conic-gradient(red, yellow, green, blue, red);
+}
+
+/*  Repeating Gradient */
+.demo.repeating {
+    background: repeating-linear-gradient(
+        45deg, #000 0px,  #000 10px,  #fff  10px,  #fff  20px);
+}
