@@ -1,94 +1,43 @@
-body {
-    font-family: sans-serif;
-    padding: 2rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Css Tooltips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Modern Css Tooltips</h2>
+    
+    <div class="tip top">
 
-/*    الحاويه العامة     */  
-.tip {
-    position: relative;
-    display: inline-block;
-    margin: 1rem;
-}
+        Hover Top 
+    <span class="msg">Modern top Tooltip</span>
+    </div>
 
-/*    البالون     */ 
-.tip .msg {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 8px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.25s;
-    font-size: 0.85rem;
-}
 
-.tip:hover .msg {
-    opacity: 1;
-    visibility: visible;
-}
+    <div class="tip bottom">
+        Hover Bottom
+        <span class="msg">Modern bottom Tooltip</span>
+    </div>
+    
 
-/*     السهم  */
-.msg::after {
-    content: "";
-    position: absolute;
-    border-width: 7px;
-    border-style: solid;
-}
+    <div class="tip left">
+        Hover left
+        <span class="msg">Modern left Tooltip</span>
+    </div>
 
-/*     اعلى  */
-.tip.top .msg {
-    bottom: 130%;
-    left: 50%;
-    transform: translateX(-50%);
-}
+    <div class="tip right">
+        Hover Right
+        <span class="msg">Modern right Tooltip</span>
+    </div>
 
-.tip.top .msg::after {
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-color: rgb(0, 0, 0, 0.8) transparent transparent transparent;
-}
-
-/*   اسفل   */
-.tip.bottom .msg {
-    top: 130%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.tip.bottom .msg::after {
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
-}
-
-/*     يمين  */
-.tip.right .msg {
-    left: 130%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.tip.right .msg::after {
-    top: 50%;
-    right: 100%;
-    transform: translateY(-50%);
-    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
-}
-
-/*     يسار  */
-.tip.left .msg {
-    right: 130%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.tip.left .msg::after {
-    top: 50%;
-    left: 100%;
-    transform: translateX(-50%);
-    border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
-}
+    <!-- نسخة لذوي الاحتياجات الاخاصة-->
+     <bottom class="tip top" aria-describedby="specialTip">
+        Accessible 
+        <span id="specialTip" role="tooltip" class="msg">
+            ARIA-accessible tooltip
+        </span>
+     </bottom>
+</body>
+</html>
