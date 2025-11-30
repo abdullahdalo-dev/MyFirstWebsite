@@ -1,0 +1,24 @@
+هذه اختصارات الكود
+مثلا / عندما نكتب m10
+ثم نضغط enter يعطينا الكود كامل
+m10 →→→→→ margin: 10px
+يوجد العديد منها وهي / القيم السريعه , الالوان , Flexbox , Grid , Z-Index & Position , 
+Border + Radius , Shadow , Text
+
+
+القيم السريعه
+m10 → margin: 10px;
+p20 → padding: 20px;
+w100 → width: 100px;
+h50 → height: 50px;
+fs16 → font-size: 16px;
+fw700 → font-weight: 700;
+lh1.5 → line-height: 1..5;
+op0.5 → opacity: 0.5;
+
+====================================
+الالوان
+c#000  →  color: #000;
+bg#fff →  background: #fff;
+bgc#333 → background-color: #333;
+===================================
