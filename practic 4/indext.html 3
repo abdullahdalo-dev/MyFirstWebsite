@@ -1,0 +1,85 @@
+css Gradients Extra Examples مثال اخر على تعدد الالوان
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Gradients Extra Examples</title>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 15;
+            color: #333;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        /* 1) Button Hover : Gradient Gradient */
+        .btn-demo button{
+            background-image: linear-gradient(to right, #ff7e5f, #fed47b);
+            border: none;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-image 0.5s ease;
+        }
+
+        .btn-demo button:hover {
+            background-image: linear-gradient(to right, #86a8e7, #91eae4);
+        }
+
+        /* 2) Text Overlay on Semi-Transparent Gradient */
+        .overlay-demo {
+            position: relative;
+            display: inline-block;
+            max-width: 400px;
+        }
+        .overlay-demo img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay-demo .overlay {
+            position: absolute;
+            top:  0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(to bottom,
+             rgba(0,0,0,0.4),
+              rgba(0,0,0,0.4)
+              );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
+    <section class="btn-demo">
+    <h2>1) Button Hover: Gradient - Gradient </h2>
+    <button>Hover Me </button>
+    </section>
+
+    <section class="overlay-demo">
+        <h2>2) Text Overlay on Semi-Transparent Gradient</h2>
+        <img src="images/gr.1.jpg" alt="Sample">
+        <div class="overlay">Overlay Text</div>
+    </section>
+</body>
+</html>
