@@ -1,0 +1,79 @@
+Transforms 2D & 3D Magic تعني في ال CSS
+تحريك, تدوير , تكبير , امالة , او قلب العناصر في بعدين ( 2D & 3D) او ثلاث ابعاد بدون جافا سكربت
+اولا التغير وهي  transform
+و هي خاصية تسمح لك بتغير شكل او اتجاه او حجم العنصر مثل السحر
+تستخدم في / 
+تصميم الواجهات , الالعاب البسيطة , الكروت التفاعلية , الازرار , 
+( gallery المعرض)
+====================
+ثانيا الثنائي الابعاد
+2D  و هي تعمل على
+X المحور  عرض 
+Y  المحور ارتفاع
+و من اهم اوامرها
+translate(x , y )  تحريك العنصر
+rotate ( deg ) تدوير
+scale ( x )  تكبير  /  تصغير
+skew ( x , y )  امالة
+
+الكود
+
+<div class="bpx">2D Box</div>
+
+    <style>
+        
+        .box {
+            width: 15px;
+            height: 100px;
+            background: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            transform: translateX(50px) rotate(10deg) scale(1.2);
+        }
+    </style>
+
+
+
+=========================
+ثالثا ثلاثي الابعاد
+3D
+Z المحور
+rotate X () دوران عمودي 
+rotate Y () دوران افقي
+rotate Z () دوران عادي
+translate Z () حركة للعمق
+perapective  يعطي عمقا حقيقيا
+
+الكود
+<div class="scene">
+    <div class="card">3D Card</div>
+
+    </div>
+    <style>
+        .scene {
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 160px;
+            height: 120px;
+            background: #e74c3c;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.6s;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+===========================================
+
