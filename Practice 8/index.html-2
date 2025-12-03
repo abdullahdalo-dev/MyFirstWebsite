@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .wrap {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 90px;
+            height: 90px;
+            background: #9b59b6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* 1 width */
+        .w {
+            transition: width 1.5s;
+        }
+
+        .w:hover {
+            width: 160px;
+        }
+
+        /* 2 Color + Delay */
+        .d {
+            transition: background 1s ease 0.5s;
+        }
+
+        .d:hover {
+            background: #e67e22;
+        }
+
+        /* 3 Easing */
+        .e {
+            transition: transform 1s;
+        }
+
+        .e:hover {
+            transition-timing-function: ease-in-out;
+            transform: translateY(-25px);
+        }
+
+        /* 4 Multi + Cubic */
+        .m {
+            transition: background 0.6s, transform 1s cubic-bezier(.68,-0.6,.3,1.6);
+        }
+
+        .m:hover {
+            background: #1abc9c;
+            transform: rotate(12deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Mini CSS Transition Demo</h2>
+
+    <div class="wrap">
+        <div class="box w">Width</div>
+        <div class="box d">Delay</div>
+        <div class="box e">Ease</div>
+        <div class="box m">Multi</div>
+    </div>
+</body>
+</html>
