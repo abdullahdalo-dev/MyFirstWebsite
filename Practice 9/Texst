@@ -1,0 +1,23 @@
+CSS Animation حركة تلقائية مستمرة او متحركة للعناصر بدون الحاجة لاي حدث مثل هوفرHover
+يعني ببساطه // 
+Transition = Hover حركة عند الحدث
+Animation = حركه تعمل لوحدها تلقائيا
+وهي تعتمد على جزئين رئيسيين
+1 @keyframes تعريف الحركه با استخدام
+2 animation تشغيل الحركة على العنصر با ستخدام
+
+Example 
+@keyframs move { 
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(200px);
+}
+}
+.box {
+width: 100px;
+height: 100px;
+background: red;
+animation: move 2s infinite;
+}
