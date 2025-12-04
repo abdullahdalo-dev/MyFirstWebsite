@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations Only</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+            gap: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: #00c3ff;
+            border-radius: 12px;
+        }
+
+        /* 1 Bouncing */
+        .bounce {
+            width: 50px;
+            height: 50px;
+            background: #398db3;
+            border-radius: 50%; /*  هذه الخانه تجول الشي الى كورة  */
+            animation: bounce 1s infinite alternate;
+       }
+
+       @keyframes bounce {
+        from {
+            transform: translateY(0) rotate(0deg);
+        }
+        to {
+            transform: translateY(-80px) rotate(360deg);
+        }
+       }
+
+
+       /* 2 Fading */
+       .fade {
+        font-size: 2rem;
+        color: #3498db;
+        text-align: center;
+        animation: fade 1.5s infinite alternate;
+       }
+
+       @keyframes fade {
+        from {opacity: 1;}
+        to {opacity: 0;}
+       }
+
+       /* 3 Spinning */
+       .spin {
+        animation: spin 1.2s linear infinite;
+        text-align: center;
+       }
+
+       @keyframes spin {
+        from {transform: rotate(0);}
+        to {transform: rotate(360deg);}
+       }
+
+       /* 4 Pulsing */
+       .pulse {
+        animation: pulse 1s infinite alternate;
+        text-align: center;
+       }
+
+       @keyframes pulse {
+        from {transform: scale(1);}
+        to {transform: scale(1.4);}
+       }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Animations Demo</h1>
+    <section>
+        <h2>1 Bounce</h2>
+        <div class="box bounce">B</div>
+    </section>
+
+    <section>
+        <h2>2 Fade</h2>
+        <div class=" fade">Hello Abdullah Dalo</div>
+    </section>
+
+    <section>
+        <h2>3 Spin</h2>
+        <div class="box spin">S</div>
+    </section>
+
+    <section>
+        <h2>4 Pulse</h2>
+        <div class="box pulse">P</div>
+    </section>
+
+</body>
+</html>
