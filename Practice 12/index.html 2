@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Image Shapes Gallery</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    /* ====== Gallery Grid ====== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* ====  صورة عامة  ==== */
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* ==== 1 Circle via border-radius ==== */
+    .circle-br {
+      border-radius: 50%;
+    }
+
+    /* ==== 2 Circle via clip-path ==== */
+    .circle-clip {
+      clip-path: Circle(50%);
+    }
+
+    /* ==== 3 Half Right Circle via clip-path ==== */
+    .half-right {
+      clip-path: Circle(50% at 100% 50%);
+    }
+
+    /* ==== 4 Half Left Circle via clip-path ==== */
+    .half-left {
+      clip-path: Circle(50% at 0 50%);
+    }
+
+    /* ==== 5 Ellipse via border-radius ==== */
+    .ellipse-br {
+      border-radius: 50% / 30%;
+    }
+
+    /* ==== 6 Ellipse via clip-path ellipse ==== */
+    .ellipse-clip {
+      clip-path: ellipse(60% 40% at 50% 50%);
+    }
+
+    /* ==== 7 Right Ellipse via clip-path ellipse () ==== */
+    .ellipse-right {
+      clip-path: ellipse(60% 40% at 100% 50%);
+    }
+
+    /* ==== 8 Left Ellipse via clip-path ellipse () ==== */
+    .ellipse-left {
+      clip-path: ellipse(60% 40% at 0% 50%);
+    }
+
+    /* ==== 9 Polygon via clip-path ==== */
+    .polygon {
+      clip-path: polygon(
+        20% 0%, 80% 0%,
+        100% 50%, 80% 100%,
+        20% 100%, 0% 50%
+      );
+    }
+
+    /* ==== 10 Hexagon via clip-path ==== */
+    .hexagon {
+      clip-path: polygon(
+        25% 5%, 75% 5%,
+        100% 50%, 75% 95%,
+        25% 95%, 0% 50%
+
+      );
+    }
+
+    /* ==== 11 Inset Rounded Rect & Circle Mask via clip-path ==== */
+    .inset-rounded {
+      clip-path: inset(10% round 50px);
+    }
+
+    /* ==== 12 Text wrapping with shape-outside float - ==== */
+    .shape-wrap {
+      width: 150px;
+      height: 150px;
+      float: left;
+      margin: 0 15px 15px 0;
+      shape-outside: circle(50%);
+      clip-path: circle(50%);
+      object-fit: cover;
+    }
+
+    /* ==== 13 Star via clip-path ==== */
+    .star {
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+    }
+
+    /* ==== 14 Triangle via clip-path ==== */
+    .triangle {
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    }
+  </style>
+</head>
+<body>
+  
+  <h2>CSS Image Shapes</h2>
+  <div class="gallery">
+
+    <!-- 1 Gallery  -->
+     <div class="box">
+      <img src="image/pc 1.jpg" alt="" class="circle-br">
+      1 Circle - border-radius
+     </div>
+
+     <!-- 2 Gallery -->
+      <div class="box">
+        <img src="image/pc 2.jpg" alt="" class="circle-clip">
+        2 Circle - clip-path
+      </div>
+
+      <!-- 3 Gallery -->
+      <div class="box">
+        <img src="image/pc 3.jpg" alt="" class="half-right">
+       3 Half Right Circle - clip-path
+      </div>
+
+      <!-- 4 Gallery -->
+      <div class="box">
+        <img src="image/pc 4.jpg" alt="" class="half-left">
+        4 Half Left Circle - clip-path
+      </div>
+
+      <!-- 5 Gallery -->
+      <div class="box">
+        <img src="image/pc 5.jpg" alt="" class="ellipse-br">
+        5 Ellipse - border-radius
+      </div>
+
+      <!-- 6 Gallery -->
+      <div class="box">
+        <img src="image/pc 1.jpg" alt="" class="ellipse-clip">
+        6 Ellipse - clip-path ellipse ()
+      </div>
+
+      <!-- 7 Gallery -->
+      <div class="box">
+        <img src="image/pc 2.jpg" alt="" class="ellipse-right">
+        7 Right Ellipse - clip-path ellipse ()
+      </div>
+
+      <!-- 8 Gallery -->
+      <div class="box">
+        <img src="image/pc 3.jpg" alt="" class="ellipse-left">
+        8 Left Ellipse - clip-path ellipse ()
+      </div>
+
+      <!-- 9 Gallery -->
+      <div class="box">
+        <img src="image/pc 4.jpg" alt="" class="polygon">
+        9 Polygon - clip-path
+      </div>
+
+      <!-- 10 Gallery -->
+      <div class="box">
+        <img src="image/pc 5.jpg" alt="" class="hexagon">
+        10 Hexagon - clip-path
+      </div>
+
+      <!-- 11 Gallery -->
+      <div class="box">
+        <img src="image/pc 1.jpg" alt="" class="inset-rounded">
+        11 Inset Rounded Rect - clip-path
+      </div>
+
+      <!-- 12 Gallery -->
+      <div class="box">
+        <img src="image/pc 2.jpg" alt="" class="shape-wrap">
+        <p>
+          12 Text Wrapping - shape-outside
+        هذا المثال يستخدم لالتفاف النص حول الشكل <strong>float + shape-outside</strong>
+        </p>
+      </div>
+
+      <!-- 13 Gallery -->
+      <div class="box">
+        <img src="image/pc 3.jpg" alt="" class="star">
+        13 Star - clip-path
+      </div>
+
+      <!-- 14 Gallery -->
+      <div class="box">
+        <img src="image/pc 4.jpg" alt="" class="triangle">
+        14 Triangle - clip-path
+      </div>
+  </div>
+</body>
+</html>
