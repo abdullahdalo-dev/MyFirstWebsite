@@ -71,7 +71,7 @@
     </ul>
 
   <section class="method1">
-    <img src="Images/A2.jpg" alt="Image via margin:auto">
+    <img src="image/pc 2.jpg" alt="Image via flexbox">
   </section>
 
   <h2>Method 2: Center with Flexbox</h2> 
@@ -91,7 +91,7 @@
 
     </p>
     <div class="method2">
-      <img src="Images/A2.jpg" alt="Image via flexbox">
+      <img src="image/pc 1.jpg" alt="Image via flexbox">
     </div>
   </section>
 
