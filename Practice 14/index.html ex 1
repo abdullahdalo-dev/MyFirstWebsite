@@ -8,7 +8,7 @@
       
 
         .faceBook {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: 0 0;
             width: 50px;
             height: 50px;
@@ -21,7 +21,7 @@
         }
 
         .faceBook:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -1px -64px;
             width: 50px;
             height: 50px;
@@ -29,7 +29,7 @@
         }
 
         .rss {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -57px 0;
             width: 50px;
             height: 50px;
@@ -42,7 +42,7 @@
         }
 
         .rss:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -57px -64px;
             width: 50px;
             height: 50px;
@@ -50,7 +50,7 @@
         }
 
         .linkedIn {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -114px 0;
             width: 50px;
             height: 50px;
@@ -63,7 +63,7 @@
         }
 
         .linkedIn:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -114px -64px;
             width: 50px;
             height: 50px;
@@ -71,7 +71,7 @@
         }
 
         .pint {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -171px 0;
             width: 50px;
             height: 50px;
@@ -84,7 +84,7 @@
         }
 
         .pint:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -171px -64px;
             width: 50px;
             height: 50px;
@@ -92,7 +92,7 @@
         }
 
         .share {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -227px 0;
             width: 50px;
             height: 50px;
@@ -105,7 +105,7 @@
         }
 
         .share:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -227px -64px;
             width: 50px;
             height: 50px;
@@ -113,7 +113,7 @@
         }
 
         .youtube {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -282px -1px;
             width: 50px;
             height: 50px;
@@ -126,7 +126,7 @@
         }
 
         .youtube:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -282px -64px;
             width: 50px;
             height: 50px;
@@ -134,7 +134,7 @@
         }
 
         .twitter {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -337px -1px;
             width: 50px;
             height: 50px;
@@ -146,7 +146,7 @@
         }
 
         .twitter:hover {
-            background: url('Images/image_sprites.png');
+            background: url('Image/image_sprites.png');
             background-position: -337px -64px;
             width: 50px;
             height: 50px;
