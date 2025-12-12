@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering Images</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background: #f8c5c5;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .card {
+            background: #bbf1c7;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #333;
+            background: #b4f57e;
+        }
+
+        /* 1- margin:auto */
+        .img-auto {
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            background: #f5b37e;
+        }
+
+        /* 2- Flexbox */
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background: #f5b37e;
+            border-radius: 10px;
+        }
+
+        .flex-center img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CARD 1 -->
+     <div class="card">
+        <h3>Method 1- Center Image Using <code>margin:auto</code></h3>
+        <p>الصورة تتحول ل يمين و يسار _ فتتوسط تلقائيا داخل كرت الصفحة auto margin و نضع لها block</p>
+        <img src="image/pc 1.jpg" alt="Centered by margin auto" class="img-auto">
+     </div>
+
+     <!-- CARD 2 -->
+      <div class="card">
+        <h3>Method 2- Center using Flexbox</h3>
+        <p>نضع الصورة داخل العنصر <div> ليعمل بنظام Flexbox ثم نستخدم الخاصية justify-content:center لتوسيط الصورة افقيا </p>
+            <div class="flex-center">
+                <img src="image/pc 2.jpg" alt="Centered by Flexbox">
+            </div>
+      </div>
+    
+</body>
+</html>
