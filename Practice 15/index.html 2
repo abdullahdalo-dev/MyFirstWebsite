@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Very Simple</title>
+  <style>
+    .icon {
+      width: 60px;
+      height: 60px;
+      fill: #3498db;
+    }
+    .icon:hover {
+      fill: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  
+  <h2>Simple SVG Icon</h2>
+
+  <!-- ايقونة قلب بسيطة-->
+   <svg class="icon" viewBox="0 0 24 24">
+    <path d="M12 21s-7-4.4-9.5-8A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 9.5 8c-2.5 3.6-9.5 8-9.5 8z"/>
+   </svg>
+
+   <p>مرر الماوس على الايقونة لتغيير اللون</p>
+</body>
+</html>
