@@ -20,3 +20,6 @@ sprite.png  ينحفظ بهذا الاسم
 background: url(image/image_sprites.png);  هذا ثابت
 background-position: -337px -64px; و هذا متغير
 الارقام في الخللفيه جدا مهمه و كلها مختلفه .. اما خلفية الصورة ثابته
+
+transform: scale(1.15);  هذه الخاصيه ترفع الصوار الى الاعلى
+transform: rotate(-90deg); و هذه الخاصيه تقلب الصوار
