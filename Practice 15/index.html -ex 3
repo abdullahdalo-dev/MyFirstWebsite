@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Star</title>
+  <style>
+    .star {
+      width: 70px;
+      height: 70px;
+      fill: gold;
+      cursor: pointer;
+      transition: transform .3s, fill .3s
+    }
+
+    .star:hover {
+      fill: orange;
+      transform: rotate(20deg) scale(12);
+    }
+  </style>
+</head>
+<body>
+  <h3>Star Icon</h3>
+  
+  <svg class="star" viewBox="0 0 24 24">
+    <path d="M12 213 7h71-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>
+  </svg>
+  
+</body>
+</html>
