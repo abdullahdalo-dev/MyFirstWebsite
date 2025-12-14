@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h2>Social Media Icons (CSS Sprite)</h2></title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+
+        }
+
+        .icons {
+            display: flex;
+            gap: 12px;
+            outline: 1px solid ;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            background: url("image/image_sprites.png") no-repeat;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+
+        /* فيسبوك */
+        .facebook {
+            background: url(image/image_sprites.png);
+            background-position: 0 0;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            margin-right: 10px;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+
+        }
+
+        .facebook:hover {
+            background: url(image/image_sprites.png);
+            background-position: -1px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+             /*transform: rotate(-90deg);*/
+            
+        }
+
+
+        .rss  {
+            background: url(image/image_sprites.png);
+            background-position: -57px 0;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            margin-right: 10px;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .rss:hover {
+            background: url(image/image_sprites.png);
+            background-position: -57px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+             /*transform: rotate(-90deg);*/
+        }
+
+        /* تويتر  */
+        .linkedin {
+            background: url(image/image_sprites.png);
+            background-position: -114px 0;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .linkedin:hover {
+            background: url(image/image_sprites.png);
+            background-position: -114px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+            /*transform: rotate(-90deg);*/
+        }
+
+        /* انستقرام */
+        .pint {
+            background: url(image/image_sprites.png);
+            background-position: -171px 0;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .pint:hover {
+            background: url(image/image_sprites.png);
+            background-position: -171px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+             /*transform: rotate(-90deg);*/
+        }
+
+        /*  يوتيوب */
+        .share  {
+            background: url(image/image_sprites.png);
+            background-position: -227px 0;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            margin-right: 10px;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .share:hover {
+            background: url(image/image_sprites.png);
+            background-position: -227px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+           /*transform: rotate(-90deg);*/
+        }
+
+        /* لينكدإن */
+        .youtube  {
+            background: url(image/image_sprites.png);
+            background-position: -282px -1px;
+             width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 10px;
+            display: inline-block;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .youtube:hover {
+           background: url(image/image_sprites.png);
+           background-position: -282px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+            /*transform: rotate(-90deg);*/
+        }
+
+        .twitter  {
+            background: url(image/image_sprites.png);
+            background-position: -337px -1px;
+            width: 50px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            margin-right: 10px;
+            transform: perspective(1000);
+            transform-style: preserve-3d;
+            transition: all 400ms ease;
+        }
+
+        .twitter:hover {
+            background: url(image/image_sprites.png);
+            background-position: -337px -64px;
+            width: 50px;
+            height: 50px;
+            transform: scale(1.15);
+            /*transform: rotate(-90deg);*/
+        }
+
+
+
+            </style>
+</head>
+<body>
+    <h2>Social Media Icons (CSS Sprite)</h2>
+    
+    <!--<div class="icons">
+        <a href="#" class="icon facebook"></a>
+        <a href="#" class="icon twitter"></a>
+        <a href="#" class="icon instagram"></a>
+        <a href="#" class="icon youtube"></a>
+        <a href="#" class="icon linkedin"></a>
+        <a href="#" class="icon share"></a>
+        <a href="#" class="icon rss"></a>
+        <a href="#" class="icon pint"></a>
+    </div> -->
+
+
+
+    <div class="icons" > 
+
+         <a href="#">
+            <div class="icon facebook">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon rss">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon linkedin">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon pint">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon share">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon youtube">
+            </div>
+        </a>
+        <a href="#">
+            <div class="icon twitter">
+            </div>
+        </a>
+
+        
+
+
+    </div>
+
+</body>
+</html>
