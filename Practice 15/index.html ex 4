@@ -19,9 +19,10 @@
 </head>
 <body>
   <h3>Home Icon</h3>
-  <svg class="icon" viewBox="0 0 24 24">
-    <path d="M3 1219-9 9 9v9h-6v-6H9v6H3z"/>
-  </svg>
+
+<svg class="icon" viewBox="0 0 24 24">
+  <path d="M3 12l9-9 9 9v9h-6v-6H9v6H3z"/>
+</svg>
   
 </body>
 </html>
