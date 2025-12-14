@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Home</title>
+  <style>
+    .icon {
+      width: 70px;
+      height: 70px;
+      fill: #2ecc71;
+      cursor: pointer;
+      transition: fill .3s;
+    }
+    .icon:hover {
+      fill: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h3>Home Icon</h3>
+  <svg class="icon" viewBox="0 0 24 24">
+    <path d="M3 1219-9 9 9v9h-6v-6H9v6H3z"/>
+  </svg>
+  
+</body>
+</html>
