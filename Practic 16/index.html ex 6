@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background: url(image/pc\ 2.jpg) center / cover; هنا ايضا صورة مختارة
+
+            mask-image:url(image/pc\ 2.jpg);  هنا صورة مختارة
+            mask-size: cover;
+            mask-repeat: no-repeat;
+
+            mask-image: linear-gradient(black, transparent);
+            -webkit-mask-image: linear-gradient(black, transparent);  غالبا نحتاج كتابة هذا الكود مهم جدا -webkit-mask-image/ هنا يظهر الصورة ب وضوح ثم تختفي تدرجيا الى الاسفل
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
