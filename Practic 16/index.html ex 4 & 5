@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background: url("https://picsum.photos/400") center / cover;
+
+            /* Mask */
+            
+            mask-image: radial-gradient(circle, black 60%, transparent 61%); تظهر الصورة داخل الدئرة فقط و ما خارج الدائرة مخفي
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
