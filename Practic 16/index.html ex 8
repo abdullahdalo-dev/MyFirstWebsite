@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking Mini Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f0f0f;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url("https://picsum.photos/1400/900") center/cover;
+
+            /* Mask Gradient */
+            -webkit-mask-image: linear-gradient(to button, black 70%, transparent);
+            mask-image: linear-gradient(to bottom, black 70%, transparent);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        /* Text Mask */
+        .hero h1 {
+            font-size: 80px;
+            margin-bottom: 20px;
+
+            background: url("https://picsum.photos/800") center/cover;
+            color: transparent;
+
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        .hero button {
+            margin-top: 30px;
+            padding: 14px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ABDULLAH DALO</h1>
+            <p>Program Developer</p>
+            <button>Start Now</button>
+        </div>
+    </section>
+    
+</body>
+</html>
