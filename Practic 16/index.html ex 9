@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Masking Examples</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 80px;
+            color: #00eaff;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 10px auto 30px;
+            color: #ccc;
+            font-size: 15px;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* 1-  Property */
+        .mask-image {
+            background-image: url("https://picsum.photos/600");
+
+            -webkit-mask-image: linear-gradient(to right, black, transparent);
+            mask-image: linear-gradient(to right, black, transparent);
+        }
+
+        /* 2- Prefix */
+        .webkit-mask {
+            background-image: url("https://picsum.photos/600");
+
+            -webkit-mask-image: radial-gradient(circle, black 60%, transparent 70%,);
+            mask-image: radial-gradient(circle, black 60%, transparent 70%);
+        }
+
+        /* 3- Positioning & Sizing */
+        .mask-position {
+            background-image: url("https://picsum.photos/id/1020/600/400");
+
+            -webkit-mask-image: radial-gradient(circle, black 50%, transparent 60%,);
+            mask-image: radial-gradient(circle, black 50%, transparent 60%);
+
+            -webkit-mask-size: 150px 150px;
+            mask-size: 150px 150px;
+
+            -webkit-mask-position: center;
+            mask-position: center;
+
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+
+        /* 4- Gradients as Masks */
+        .gradient-mask {
+            width: 40%;
+            height: 350px;
+            border-radius: 16px;
+            
+
+             background-image: url("https://picsum.photos/600");
+             /* background-image: url("https://picsum.photos/id/1069/600"); */
+
+            -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.7) 20%, transparent 64%);
+           
+            background-image: cover;
+            background-position: center;
+
+            -webkit-mask-size: 80px 80px;
+            -webkit-mask-repeat: repeat;
+        }
+
+        .gradient-mask:hover {
+            mask-size: 30px 30px;
+            mask-position: 0 0;
+            -webkit-mask-position: 0 0;
+        }
+
+        /* 5-  Text */
+        .text-mask {
+            font-size: 90px;
+            font-weight: bold;
+            margin: 40px 0 100px;
+
+
+            background-image: url("https://picsum.photos/600");
+            background-size: cover;
+            background-position: center;
+
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 1- Property -->
+     <h2>mask-image Property</h2>
+     <div class="box mask-image"></div>
+     <p><strong>mask-image</strong> مرحبا عبد الله دالو </p>
+
+     <!-- 2- Prefix -->
+      <h2>-webkit-mask-image Prefix</h2>
+      <div class="box webkit-mask"></div>
+      <p><strong>-webkit-mask-image</strong> لدعم المتصفحات</p>
+
+      <!-- 3- Positioning & Sizing -->
+       <h2>Mask Positioning & Sizing</h2>
+       <div class="box mask-position"></div>
+       <p><strong>التحكم ب مكان وجه القناع</strong></p>
+
+       <!-- 4- Gradients as Masks -->
+        <h2>Gradients as Masks</h2>
+        <div class="box gradient-mask"></div>
+        <p><strong>التدرجات</strong></p>
+
+        <!-- 5- Text -->
+         <h2>Masking Text with an Image</h2>
+         <div class="text-mask">Abdullah Dlo</div>
+         <p><strong>Abdullah Dalo</strong></p>
+    
+</body>
+</html>
