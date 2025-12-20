@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Solution</title>
+
+  <style>
+    /*  الوضع الفاتح */
+    :root {
+      --xxg-color: #ffffff;
+      --text-color: #000000;
+      --box-color: #f2f2f2;
+      --link-color: #0066cc;
+    }
+
+    /*  الوضع الداكن */
+    body.dark {
+      --xxg-color: #121212;
+      --text-color: #ffffff;
+      --box-color: #1e1e1e;
+      --link-color: #4da3ff;
+    }
+
+    body {
+      background: var(--xxg-color);
+      color: var(--text-color);
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 30px;
+      transition: 0.3s;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .box {
+      background: var(--box-color);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    button {
+      padding:  10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="toggle">Toggle Dark Mode</button>
+
+  <h1>CSS Variable Review</h1>
+  <p> هذا مثال على الرابط <a href="#"> اضغط هنا </a></p>
+  <div class="box">صندوق يتغير مع القيم</div>
+
+
+
+  <script>
+    document.getElementById('toggle').onclick = () => {
+      document.body.classList.toggle('dark');
+    };
+  </script>
+</body>
+</html>
