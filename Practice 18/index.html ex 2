@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Math Function- Interactive</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: clamp(15px, 4vw, 0px);
+            background: #f4f4f4;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        /*   Container */
+        .container {
+            width: min(100%, 900px);
+            margin: auto;
+        }
+
+        /* 1- calc() - dynamic gap */
+        .calc-box {
+            background: #0066cc;
+            color: wheat;
+            padding: calc(10px + 1vw);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .calc-box:hover {
+            width: calc(100% - 100px);
+        }
+
+        /* 2- min() - responsive card */
+        .min-box {
+            background: #009966;
+            color: white;
+            width: min(80%, 350px);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .min-box:hover {
+            width: min(90%, 450px);
+        }
+
+        /* 3- max() - safe button size */
+        .max-box button {
+            font-size: max(14px, 2vw);
+            padding: max(10px, 2vw);
+            border: none;
+            background: #cc5500;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .max-box button:hover {
+            transform: scale(1.1);
+        }
+
+        /* 4- clamp() - interactive text */
+        .clamp-box {
+            background: #993399;
+            color: white;
+            font-size: clamp(16px, 3vw, 28px);
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .clamp-box:hover {
+            letter-spacing: clamp(1px, 1vw, 4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Css Math Functions - Interactive Demo</h1>
+
+        <h2>1- calc ()</h2>
+        <div class="calc-box">
+            Hover me -> clac()
+        </div>
+
+        <h2>2- min()</h2>
+        <div class="min-box">
+            Hover me -> 
+        </div>
+
+        <h2>3- max()</h2>
+        <div class="max-box">
+            <button>Hover Button</button>
+        </div>
+
+        <h2>4- clamp()</h2>
+        <div class="clamp-box">
+            Hover me
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
