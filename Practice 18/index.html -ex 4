@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing Comparison</title>
+
+<style>
+/* ========== GLOBAL ========== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  padding: clamp(15px, 4vw, 40px);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+/* ========== TABLE BASE ========== */
+.table {
+  width: min(100%, 1000px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Grid Row */
+.row {
+  display: grid;
+  grid-template-columns:
+    calc(20% - 10px)
+    min(30%, 220px)
+    max(140px, 25%)
+    clamp(140px, 25%, 260px);
+  transition: 0.3s;
+}
+
+/* Cell */
+.cell {
+  padding: clamp(10px, 2vw, 18px);
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header */
+.header .cell {
+  background: #00695c;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hover */
+.row:not(.header):hover .cell {
+  background: #e0f2f1;
+}
+
+/* Button */
+button {
+  padding: max(8px, 1vw);
+  font-size: max(14px, 1.5vw);
+  border: none;
+  border-radius: 6px;
+  background: #00695c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Pricing Comparison</h1>
+
+<div class="table pricing">
+
+  <div class="row header">
+    <div class="cell">Plan</div>
+    <div class="cell">Storage</div>
+    <div class="cell">Price</div>
+    <div class="cell">Buy</div>
+  </div>
+
+  <div class="row">
+    <div class="cell">Free</div>
+    <div class="cell">5 GB</div>
+    <div class="cell">$0</div>
+    <div class="cell"><button class="btn-buy">Select</button></div>
+  </div>
+
+  <div class="row">
+    <div class="cell">Basic</div>
+    <div class="cell">50 GB</div>
+    <div class="cell">$5</div>
+    <div class="cell"><button class="btn-buy">Select</button></div>
+  </div>
+
+  <div class="row">
+    <div class="cell">Pro</div>
+    <div class="cell">200 GB</div>
+    <div class="cell">$12</div>
+    <div class="cell"><button class="btn-buy">Select</button></div>
+  </div>
+
+  <div class="row">
+    <div class="cell">Enterprise</div>
+    <div class="cell">1 TB</div>
+    <div class="cell">$30</div>
+    <div class="cell"><button class="btn-buy">Select</button></div>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.btn-buy').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.textContent = 'Selected';
+    btn.style.background = '#333';
+  });
+});
+</script>
+
+</body>
+</html>
