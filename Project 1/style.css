@@ -1,0 +1,189 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* ===== المتغيرات الأساسية ===== */
+:root {
+  --cv-color: #e2f0ed;        /* خلفية البوكسات */
+  --text-color: #111827;      /* النص الأساسي */
+  --box-color: #e9e9da;       /* خلفية الصفحة */
+  --link-color: #1345af;      /* الروابط والعناوين */
+  --accent-yellow: #FACC15;   /* زر Dark Mode */
+  --accent-pink: #1707f8;     /* عنوان CV */
+  --danger-color: #f00928;    /* الخط تحت العناوين */
+  --primary-color: #000000;   /* لون النص داخل الأزرار */
+}
+
+/* ===== الوضع الداكن ===== */
+body.dark {
+  --cv-color: #425b5f;
+  --text-color: #f7f7f7;
+  --box-color: #282d36;
+  --link-color: #fcfcfc;
+  --accent-yellow: #e63b3b;
+  --accent-pink: #ffffff;
+  --danger-color: #df0404;
+}
+
+/* ===== body ===== */
+body {
+  background-color: var(--box-color);
+  color: var(--text-color);
+  transition: 0.3s;
+  padding: 20px;
+}
+
+/* ===== الحاوية ===== */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* ===== العناوين ===== */
+h1 {
+  text-align: center;
+  color: var(--accent-yellow);
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(--link-color);
+  border-bottom: 2px solid var(--danger-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* ===== الأقسام ===== */
+.section {
+  margin-bottom: 20px;
+}
+
+/* ===== المعلومات الشخصية ===== */
+.info {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 5px;
+}
+
+/* ===== خبرات و تعليم بدون الإطارات ===== */
+.edu, .job {
+  background: var(--cv-color);
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  /* تم إزالة الإطارات */
+  color: var(--link-color);
+}
+
+/* ===== المهارات ===== */
+.skills {
+  background: var(--cv-color);
+  color: var(--accent-pink);
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin: 5px 0;
+  flex: 1 1 calc(50% - 10px);
+}
+
+/* ===== اللغات ===== */
+.languaes {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.languae-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+/* ==== العربية ==== */
+.lang-ar {
+  background: #FDE68A;
+  color: #000;
+  border: 2px solid #60A5FA;
+}
+
+/* ==== الانجليزية ==== */
+.lang-en {
+  background: #BFDBFE;
+  color: #000;
+  border: 2px solid #FACC15;
+}
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* ===== زر Dark Mode ===== */
+button {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--accent-yellow);
+  color: var(--primary-color);
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: var(--accent-pink);
+  transform: translateY(-3px);
+}
+
+/* ===== رابط GitHub ===== */
+#github {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--box-color);
+  color: var(--primary-color);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#github:hover {
+  background: var(--accent-yellow);
+  color: var(--accent-pink);
+  transform: translateY(-3px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
