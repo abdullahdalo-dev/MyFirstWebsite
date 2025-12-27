@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  background: white;
+  color: #2563eb;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gray {
+  background: #f8fafc;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills li {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+}
